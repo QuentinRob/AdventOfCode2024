@@ -1,5 +1,6 @@
 /*
-Copyright © 2024 NAME HERE <EMAIL ADDRESS>
+Package cmd
+Copyright © 2024 Quentin ROBCIS
 */
 package cmd
 
@@ -16,7 +17,7 @@ var historianHysteriaCmd = &cobra.Command{
 
 Compute the total distance between two lists.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		
+
 	},
 }
 
