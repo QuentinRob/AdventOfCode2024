@@ -5,9 +5,8 @@ name: Go
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    tags:
+      - '**'
 
 jobs:
 
@@ -26,7 +25,10 @@ jobs:
 
     - name: Test
       run: go test -v ./...
-
+  
+  release:
+    runs-on: ubuntu-latest
+    steps:
     -
         name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
